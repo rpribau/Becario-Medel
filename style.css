@@ -1,0 +1,108 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos del menú */
+  .menu {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 60px;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #6D7CE3; /* Color morado */
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    float: right;
+    margin-right: 40px;
+    
+  }
+  
+  .menu li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 60px;
+    transition: 0.3s ease; /* Transición de 0.3 segundos con efecto de ease */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Efecto de iluminación al pasar el ratón */
+  .menu li:hover {
+    background-color: #3b3f5e;
+    border-radius: 10px;
+    filter: brightness(150%);
+  }
+
+  /* Estilos del contenido principal */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .profile {
+    width: auto;
+    height: auto;
+    max-width: calc(50% - 10px);
+    max-height: calc(100vh - 20px);
+    border-radius: 10px;
+  }
+
+  .text {
+    width: auto;
+    height: auto;
+    max-width: calc(50% - 10px);
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* Media queries para hacer el menú responsive */
+  @media (max-width: 600px) {
+    .menu {
+      width: 100%; 
+      flex-direction: column; 
+    }
+  
+    .menu li {
+      width: 100%; 
+      height: 40px; /* Reducir la altura de las opciones */
+      line-height: 40px; /* Alinear el texto verticalmente */
+      font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Media queries para hacer el contenido principal responsive */
+    .main {
+      flex-direction: column; 
+    }
+
+    .profile {
+      max-width: 100%; 
+      margin-bottom: 10px; 
+    }
+
+    .text {
+      max-width: 100%; /* Ocupar todo el ancho de la pantalla */
+      margin-left: 0; 
+    }
+  }
