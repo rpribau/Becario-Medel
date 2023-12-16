@@ -9,14 +9,23 @@
 </head>
 <body>
   <!-- Menú con opciones de inicio y otras 4 opciones -->
-  <ul class="menu">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Class Notes</a></li>
-    <li><a href="#">Papers and projects</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+<ul class="menu">
+  <li><a href="#">About</a></li>
+  <li>
+    <a href="#">Class Notes</a>
+    <!-- Añadir la etiqueta ul con las opciones del submenú -->
+    <ul class="submenu">
+      <li><a href="#">Math</a></li>
+      <li><a href="#">Physics</a></li>
+      <li><a href="#">Chemistry</a></li>
+      <li><a href="#">Biology</a></li>
+      <li><a href="#">History</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Papers and projects</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 
-  <!-- Contenido principal con una imagen y un texto -->
   <div class="main">
     <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Hector Medel" class="profile">
     <div class="text">
@@ -27,3 +36,6 @@
 
 </body>
 </html>
+
+
+

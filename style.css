@@ -1,117 +1,159 @@
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del menú */
+.menu {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 60px;
+  width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #6D7CE3; /* Color morado */
+  color: white;
+  font-size: 25px;
+  font-family: 'Inter', sans-serif;
+  float: right;
+  margin-right: 40px;
   
-  /* Estilos del menú */
+}
+
+.menu li {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 60px;
+  transition: 0.3s ease; /* Transición de 0.3 segundos con efecto de ease */
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Efecto de iluminación al pasar el ratón */
+.menu li:hover {
+  background-color: #3b3f5e;
+  border-radius: 10px;
+  filter: brightness(150%);
+}
+
+/* Estilos de la lista desplegable */
+.menu li ul {
+  display: none; /* Ocultar la lista desplegable por defecto */
+  position: absolute; /* Posicionar la lista desplegable de forma absoluta */
+  top: 60px; /* Colocar la lista desplegable debajo del botón */
+  left: 0; /* Alinear la lista desplegable a la izquierda del botón */
+  width: 200px; /* Darle un ancho fijo a la lista desplegable */
+  background-color: #e0e0e0; /* Darle un color de fondo a la lista desplegable */
+}
+
+/* Estilos de las opciones de la lista desplegable */
+.menu li ul li {
+  list-style: none; /* Quitar los puntos de la lista */
+  text-align: left; /* Alinear el texto a la izquierda */
+  line-height: 40px; /* Ajustar la altura de las opciones */
+  color: #333333; /* Darle un color al texto */
+}
+
+/* Estilos de los enlaces de la lista desplegable */
+.menu li ul li a {
+  display: block; /* Mostrar los enlaces como bloques */
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+  color: inherit; /* Heredar el color del texto */
+  padding: 0 10px; /* Darle un relleno a los enlaces */
+}
+
+/* Estilos de los enlaces al pasar el ratón */
+.menu li ul li a:hover {
+  background-color: #3b3f5e; /* Cambiar el color de fondo */
+  color: white; /* Cambiar el color del texto */
+}
+
+/* Estilos del botón de Class Notes */
+.menu li:nth-child(2) {
+  position: relative; /* Posicionar el botón de forma relativa */
+}
+
+/* Estilos del botón al pasar el ratón */
+.menu li:nth-child(2):hover ul {
+  display: block; /* Mostrar la lista desplegable */
+}
+
+/* Estilos del contenido principal */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  margin-top: 30px; /* Añadir esta línea */
+}
+
+.profile {
+  width: auto;
+  height: auto;
+  max-width: calc(50% - 10px);
+  max-height: calc(100vh - 20px);
+  border-radius: 10px;
+  margin-left: 200px;
+}
+
+.text {
+  width: auto;
+  height: auto;
+  max-width: calc(50% - 10px);
+  margin-left: 10px;
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+  margin-top: -10px; 
+  margin-right: 500px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  transform: scale (2);
+}
+
+
+/* Media queries para hacer el menú responsive */
+@media (max-width: 600px) {
   .menu {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    height: 60px;
-    width: 800px;
-    margin: 20px auto;
-    border-radius: 10px;
-    background-color: #6D7CE3; /* Color morado */
-    color: white;
-    font-size: 25px;
-    font-family: 'Inter', sans-serif;
-    float: right;
-    margin-right: 40px;
-    
-  }
-  
-  .menu li {
-    list-style: none;
-    flex-grow: 1;
-    text-align: center;
-    line-height: 60px;
-    transition: 0.3s ease; /* Transición de 0.3 segundos con efecto de ease */
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* Efecto de iluminación al pasar el ratón */
-  .menu li:hover {
-    background-color: #3b3f5e;
-    border-radius: 10px;
-    filter: brightness(150%);
+    width: 100%; 
+    flex-direction: column; 
   }
 
-  /* Estilos del contenido principal */
+  .menu li {
+    width: 100%; 
+    height: 40px; /* Reducir la altura de las opciones */
+    line-height: 40px; /* Alinear el texto verticalmente */
+    font-size: 16px; /* Reducir el tamaño de la fuente */
+  }
+
+  /* Media queries para hacer el contenido principal responsive */
   .main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
-    margin-top: 100px; /* Añadir esta línea */
+    flex-direction: column; 
   }
 
   .profile {
-    width: auto;
-    height: auto;
-    max-width: calc(50% - 10px);
-    max-height: calc(100vh - 20px);
-    border-radius: 10px;
-    margin-left: 200px;
+    max-width: 100%; 
+    margin-bottom: 10px; 
   }
 
   .text {
-    width: auto;
-    height: auto;
-    max-width: calc(50% - 10px);
-    margin-left: 10px;
-    font-family: 'Inter', sans-serif;
-    color: #333333;
-    margin-top: -10px; 
-    margin-right: 500px;
+    max-width: 100%; /* Ocupar todo el ancho de la pantalla */
+    margin-left: 0; 
   }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  img {
-    transform: scale (2);
-  }
-  
-
-  /* Media queries para hacer el menú responsive */
-  @media (max-width: 600px) {
-    .menu {
-      width: 100%; 
-      flex-direction: column; 
-    }
-  
-    .menu li {
-      width: 100%; 
-      height: 40px; /* Reducir la altura de las opciones */
-      line-height: 40px; /* Alinear el texto verticalmente */
-      font-size: 16px; /* Reducir el tamaño de la fuente */
-    }
-
-    /* Media queries para hacer el contenido principal responsive */
-    .main {
-      flex-direction: column; 
-    }
-
-    .profile {
-      max-width: 100%; 
-      margin-bottom: 10px; 
-    }
-
-    .text {
-      max-width: 100%; /* Ocupar todo el ancho de la pantalla */
-      margin-left: 0; 
-    }
-  }
+}
