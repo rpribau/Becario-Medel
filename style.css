@@ -50,6 +50,7 @@
     justify-content: space-between;
     width: 80%;
     margin: 20px auto;
+    margin-top: 100px; /* Añadir esta línea */
   }
 
   .profile {
@@ -58,6 +59,7 @@
     max-width: calc(50% - 10px);
     max-height: calc(100vh - 20px);
     border-radius: 10px;
+    margin-left: 200px;
   }
 
   .text {
@@ -67,6 +69,8 @@
     margin-left: 10px;
     font-family: 'Inter', sans-serif;
     color: #333333;
+    margin-top: -10px; 
+    margin-right: 500px;
   }
 
   h1 {
@@ -76,6 +80,11 @@
   p {
     font-size: 1em;
   }
+
+  img {
+    transform: scale (2);
+  }
+  
 
   /* Media queries para hacer el menú responsive */
   @media (max-width: 600px) {
