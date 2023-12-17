@@ -49,7 +49,7 @@
   position: absolute; /* Posicionar la lista desplegable de forma absoluta */
   top: 60px; /* Colocar la lista desplegable debajo del botón */
   left: 0; /* Alinear la lista desplegable a la izquierda del botón */
-  width: 200px; /* Darle un ancho fijo a la lista desplegable */
+  width: 350px; /* Darle un ancho fijo a la lista desplegable */
   background-color: #e0e0e0; /* Darle un color de fondo a la lista desplegable */
 }
 
@@ -92,7 +92,7 @@
   justify-content: space-between;
   width: 80%;
   margin: 20px auto;
-  margin-top: 30px; /* Añadir esta línea */
+  margin-top: 100px; /* Añadir esta línea */
 }
 
 .profile {
@@ -126,6 +126,10 @@ p {
 
 img {
   transform: scale (2);
+}
+
+.cut {
+  margin-top: 800px;
 }
 
 
