@@ -13,7 +13,7 @@
   justify-content: space-between;
   width: 80%;
   margin: 20px auto;
-  margin-top: 100px; /* Añadir esta línea */
+  margin-top: 50px; /* Añadir esta línea */
 }
 
 .profile {
@@ -29,20 +29,23 @@
 .text {
   width: auto;
   height: auto;
+  align-items: right;
   max-width: calc(50% - 10px);
   margin-left: 10px;
   font-family: 'Inter', sans-serif;
   color: #333333;
-  margin-top: -10px; 
-  margin-right: 200px;
+   
+  margin-right: 500px;
+  margin-bottom: 50px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4.375em;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.25em;
+  width: 100%;
 }
 
 img {
@@ -51,5 +54,29 @@ img {
 
 .cut {
   margin-top: 800px;
+}
+
+/* Efecto typewritter */
+
+.typewriter h1 {
+  overflow: hidden; /* Asegura que el contenido no se revele hasta que comience la animación */
+  border-right: .15em solid orange; /* El cursor de la máquina de escribir */
+  white-space: nowrap; /* Mantiene el contenido en una sola línea */
+  margin: 8 auto; /* Da ese efecto de desplazamiento a medida que se escribe */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: 700px;
+  
+}
+
+/* El efecto de escritura */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 700px }
+}
+
+/* El efecto del cursor de la máquina de escribir */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
