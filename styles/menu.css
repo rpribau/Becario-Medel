@@ -1,10 +1,3 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Estilos del menú */
 .menu {
   display: flex;
@@ -85,54 +78,6 @@
   display: block; /* Mostrar la lista desplegable */
 }
 
-/* Estilos del contenido principal */
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin: 20px auto;
-  margin-top: 100px; /* Añadir esta línea */
-}
-
-.profile {
-  width: auto;
-  height: auto;
-  max-width: calc(50% - 10px);
-  max-height: calc(100vh - 20px);
-  border-radius: 10px;
-  margin-left: 100px;
-  margin-right: 50px;
-}
-
-.text {
-  width: auto;
-  height: auto;
-  max-width: calc(50% - 10px);
-  margin-left: 10px;
-  font-family: 'Inter', sans-serif;
-  color: #333333;
-  margin-top: -10px; 
-  margin-right: 200px;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1em;
-}
-
-img {
-  transform: scale (2);
-}
-
-.cut {
-  margin-top: 800px;
-}
-
-
 /* Media queries para hacer el menú responsive */
 @media (max-width: 600px) {
   .menu {
@@ -162,3 +107,5 @@ img {
     margin-left: 0; 
   }
 }
+
+  
