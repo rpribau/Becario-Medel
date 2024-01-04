@@ -1,0 +1,61 @@
+/* Reset some default styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    height: 80%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    margin-left: 50px;
+    background-color: #66687A;
+    border-radius: 10px; /* Adjust color as needed */
+    font-family: 'Inter', sans-serif;
+    overflow-y: scroll; /* Add this line */
+  }
+
+  .sidebar h1 {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Style sidebar links */
+  .sidebar ul {
+   list-style-type:none; 
+   
+  }
+  .sidebar li {
+   padding:8px; 
+   text-decoration:none; 
+   font-size:25px; 
+   color:rgb(255, 255, 255); 
+   display:block 
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar li:hover {
+   background-color:#575757; /* Adjust hover color as needed */
+   color:white; /* Adjust text hover color as needed */
+   border-radius: 10px; /* Adjust color as needed */
+  }
+
+  /* Ocultar la barra de desplazamiento para Chrome, Safari y Opera */
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ocultar la barra de desplazamiento para IE, Edge y Firefox */
+  .sidebar {
+    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
