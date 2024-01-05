@@ -12,8 +12,8 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin: 20px auto;
-  margin-top: 50px; /* Añadir esta línea */
+  margin-left: 50px;
+ 
 }
 
 .profile {
@@ -43,12 +43,12 @@ h1 {
   font-size: 4.375em;
 }
 
-p {
+.main p {
   font-size: 1.25em;
   width: 100%;
 }
 
-img {
+.main img {
   transform: scale (2);
 }
 
