@@ -47,6 +47,13 @@ body, ul {
    color:rgb(255, 255, 255); 
    display:block 
   }
+
+  .sidebar a {
+   text-decoration:none; 
+   font-size:15px; 
+   color:rgb(255, 255, 255); 
+   display:block 
+  }
   
   /* When you mouse over the navigation links, change their color */
   .sidebar li:hover {
