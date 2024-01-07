@@ -1,0 +1,28 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    height: 77%;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 25%;
+    font-family: 'Inter', sans-serif;
+    list-style-type:none; 
+  }
+
+  .content h1 {
+    color: black;
+    font-size: 50px;
+    padding: 5px;
+    text-align: left;
+  }
+
+  .content p {
+    color: black;
+    font-size: 1.25em;
+    margin-left: 20px;
+    text-align: left;
+  }

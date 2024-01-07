@@ -7,13 +7,13 @@ body, ul {
   /* Style the sidebar */
   .sidebar {
     height: 80%;
-    width: 300px;
+    width: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 40px;
     background-color: #66687A;
     border-radius: 10px; /* Adjust color as needed */
     font-family: 'Inter', sans-serif;
@@ -37,7 +37,7 @@ body, ul {
   
   /* Style sidebar links */
   .sidebar ul {
-   list-style-type:none; 
+    list-style-type:none; 
    
   }
   .sidebar li {

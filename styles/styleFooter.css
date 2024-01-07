@@ -12,6 +12,7 @@ body, html {
     font-family: 'Inter', sans-serif;
     background-color: #f0f0f0; 
     color: grey;
+    margin-top: 1000px;
 }
 
 .footer p {

@@ -1,18 +1,19 @@
 /* Estilos del menú */
 .menu {
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: flex-end;
+  align-items: center;
   height: 60px;
   width: 800px;
-  margin: 20px auto;
+  margin-top: 20px;
   border-radius: 10px;
   background-color: #6D7CE3; /* Color morado */
   color: white;
   font-size: 25px;
   font-family: 'Inter', sans-serif;
   float: right;
-  margin-right: 40px;
+  position: right;
+  margin-right: 2%;
   
 }
 
@@ -21,7 +22,7 @@
   flex-grow: 1;
   text-align: center;
   line-height: 60px;
-  transition: 0.3s ease; /* Transición de 0.3 segundos con efecto de ease */
+  transition: 0.5s ease; /* Transición de 0.3 segundos con efecto de ease */
 }
 
 .menu a {
@@ -40,10 +41,11 @@
 .menu li ul {
   display: none; /* Ocultar la lista desplegable por defecto */
   position: absolute; /* Posicionar la lista desplegable de forma absoluta */
-  top: 60px; /* Colocar la lista desplegable debajo del botón */
+  top: 100%; /* Colocar la lista desplegable debajo del botón */
   left: 0; /* Alinear la lista desplegable a la izquierda del botón */
   width: 350px; /* Darle un ancho fijo a la lista desplegable */
   background-color: #e0e0e0; /* Darle un color de fondo a la lista desplegable */
+  z-index:1001;
 }
 
 /* Estilos de las opciones de la lista desplegable */
