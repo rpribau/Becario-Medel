@@ -64,14 +64,14 @@ h1 {
   white-space: nowrap; /* Mantiene el contenido en una sola línea */
   margin: 8 auto; /* Da ese efecto de desplazamiento a medida que se escribe */
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  width: 700px;
+  width: 570px;
   
 }
 
 /* El efecto de escritura */
 @keyframes typing {
   from { width: 0 }
-  to { width: 700px }
+  to { width: 570px }
 }
 
 /* El efecto del cursor de la máquina de escribir */
