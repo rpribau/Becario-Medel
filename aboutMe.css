@@ -14,7 +14,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 50px calc(100vh - 50px);
     justify-items: center;
     grid-template-areas: 
     "nav"
@@ -39,12 +39,13 @@ body{
 }
 
 .pretitle{
-    font-family: 'STIX Two Text', serif;
+    font-family: 'Palanquin Dark', sans-serif;
     font-size: larger;
 }
 
 .title{
-    font-family: 'STIX Two Text', serif;
+    font-family: 'Palanquin Dark', sans-serif;
+    line-height: 100%;          /*Modificar para distintos typefaces */
     font-size:  xx-large; 
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -56,31 +57,66 @@ body{
 }
 
 .navbar{
-    grid-area: nav;
     display: flex; 
-    justify-content: space-evenly; 
-}
-
-.navbar a{
+    width: 100%;
+    background: ghostwhite;
+    justify-content: end; 
+    height: 50px; 
+    grid-area: nav;
+    align-self: center; /* not exactly the problem */ 
+    margin-right: 0px; 
+    font-family: "STIX Two Text", serif;
+  }
+  
+  .href-container{
+    background: ghostwhite; 
+    text-align: center; 
+    position: relative; 
+    height: 50px; 
+    flex-grow: 1;
+    min-width: max-content;
+  }
+  
+  .href-container:hover{
+    background: #e0e0e0; 
+  }
+  
+  .navbar a{
     display: block;
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
+    text-decoration: none; 
+    color: black; 
     padding: 14px 20px;
-    font-size: large;
-    text-decoration: none;
-}
+    font-size: medium;
+  }
+  
+  .dropdownButton:hover .dropdown-container{
+    display: flex;
+    flex-direction: column;
+  }
 
-.dropdown{
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown-content{
-    display: none;
-}
-
+  .dropdownButton:active .dropdown-container{
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .href-container-drop:hover{
+    background: #bdbdbd; 
+  }
+  
+  .dropdown-container{
+    display:none; 
+    position: absolute; 
+    top: 50px; /*cambiar esto si se modifica el tamaño del navbar */
+    left: 0px; 
+    width: max-content;
+    z-index: 1;
+  }
+  
+  .href-container-drop{
+    background: #e0e0e0; 
+    width: auto; 
+    text-align: left; 
+  }
 
 /* ------------------------------------ */
 
@@ -119,25 +155,21 @@ body{
         grid-area: main;
         align-self: center;
         /* font-family: 'Gabarito', sans-serif; */
-        font-family: 'STIX Two Text', serif;
         width: 70%;
         color: black;
         position: initial;
     }
     
-    p{
-        font-family: 'Roboto', sans-serif; 
-    }
-    
     .pretitle{
-        font-family: 'STIX Two Text', serif;
+        font-family: 'Palanquin Dark', sans-serif;
         font-size: x-large;
         color: midnightblue;
         position: initial;
     }
     
     .title{
-        font-family: 'STIX Two Text', serif;
+        font-family: 'Palanquin Dark', sans-serif;
+        line-height: 100%;          /*Modificar para distintos typefaces */
         font-size:  xxx-large; 
         letter-spacing: 2px;
         margin-bottom: 15px;
@@ -149,74 +181,17 @@ body{
         font-weight: 400;
         line-height: 150%;
     }
-    
-    .navbar {
-        font-family: 'STIX Two Text', serif;
-        grid-area: nav;
-        background-color: ghostwhite;
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 5%;
-        /* align-self: center; */
-        align-content: center;
-        align-self: center;
-        color: rgb(0, 0, 0);
-      }
 
-      .navbar a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 20px;
+    .navbar{
+        margin-right: 50px;
+    }
+
+    .navbar a{
         font-size: large;
-        text-decoration: none;
-      }
+    }
+
+    .href-container{
+        flex-grow: unset;
+    }
     
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-    
-      .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        padding: 14px 20px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-    
-      .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: #e0e0e0;
-        color: black;
-      }
-    
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #e0e0e0;
-        min-width: 160px;
-        z-index: 1;
-      }
-    
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-    
-      .dropdown-content a:hover {
-        background-color: #bdbdbd;
-        color: black;
-      }
-    
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
 }
