@@ -6,7 +6,7 @@ html { height: 100% }
 
 body{
     min-height: 100%;
-    font-family: "Lato", sans-serif;
+    font-family: 'Source Sans 3', sans-serif; 
     background:ghostwhite;
 }
 
@@ -34,8 +34,9 @@ body{
     color: white;
     grid-area: main;
     position: absolute;
-    bottom: 100px;
+    bottom: 5%;
     width: 80%;
+    padding-left: 10%;
 }
 
 .pretitle{
@@ -49,7 +50,6 @@ body{
     font-size:  xx-large; 
     letter-spacing: 2px;
     margin-bottom: 15px;
-
 }
 
 .description{
@@ -59,18 +59,18 @@ body{
 .navbar{
     display: flex; 
     width: 100%;
+    text-align: center;
     background: ghostwhite;
-    justify-content: end; 
+    justify-content: space-evenly; 
     height: 50px; 
     grid-area: nav;
-    align-self: center; /* not exactly the problem */ 
-    margin-right: 0px; 
+    align-self: center;
+    margin-right: 0%; 
     font-family: "STIX Two Text", serif;
   }
   
   .href-container{
     background: ghostwhite; 
-    text-align: center; 
     position: relative; 
     height: 50px; 
     flex-grow: 1;
@@ -124,6 +124,7 @@ body{
     .layout{
         height: 100vh;
         display: grid;
+        justify-items: left;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 1fr;
         column-gap: 50px;
@@ -158,6 +159,8 @@ body{
         width: 70%;
         color: black;
         position: initial;
+        padding-left: unset;
+        bottom: unset;
     }
     
     .pretitle{
@@ -183,7 +186,9 @@ body{
     }
 
     .navbar{
-        margin-right: 50px;
+        width: 95%;
+        margin-right: 5%;
+        justify-content: end; 
     }
 
     .navbar a{
