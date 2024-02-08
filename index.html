@@ -36,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="aboutMe.css"> 
+    <link rel="stylesheet" href="navbar-style.css"> 
 </head>
 <body>
     <div class="layout">
@@ -79,4 +80,30 @@
             </div>
         </div>
     </div>
+
+
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDaCZQRfEVZHTuKQuNrz3-keSPYuTjxbgI",
+        authDomain: "medel-website.firebaseapp.com",
+        projectId: "medel-website",
+        storageBucket: "medel-website.appspot.com",
+        messagingSenderId: "910801554503",
+        appId: "1:910801554503:web:5a333fd19f79c8747f3562",
+        measurementId: "G-5KMJ4R5JNF"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </body>

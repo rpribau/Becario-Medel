@@ -1,0 +1,78 @@
+.navbar{
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    background: ghostwhite;
+    justify-content: space-evenly; 
+    height: 50px; 
+    grid-area: nav;
+    align-self: center;
+    margin-right: 0%; 
+    font-family: "STIX Two Text", serif;
+  }
+  
+  .href-container{
+    background: ghostwhite; 
+    position: relative; 
+    height: 50px; 
+    flex-grow: 1;
+    min-width: max-content;
+  }
+  
+  .href-container:hover{
+    background: #e0e0e0; 
+  }
+  
+  .navbar a{
+    display: block;
+    text-decoration: none; 
+    color: black; 
+    padding: 14px 20px;
+    font-size: medium;
+  }
+  
+  .dropdownButton:hover .dropdown-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdownButton:active .dropdown-container{
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .href-container-drop:hover{
+    background: #bdbdbd; 
+  }
+  
+  .dropdown-container{
+    display:none; 
+    position: absolute; 
+    top: 50px; /*cambiar esto si se modifica el tamaño del navbar */
+    left: 0px; 
+    width: max-content;
+    z-index: 1;
+  }
+  
+  .href-container-drop{
+    background: #e0e0e0; 
+    width: auto; 
+    text-align: left; 
+  }
+
+
+  @media only screen and (min-width: 950px){
+    .navbar{
+        width: 95%;
+        margin-right: 5%;
+        justify-content: end; 
+    }
+
+    .navbar a{
+        font-size: large;
+    }
+
+    .href-container{
+        flex-grow: unset;
+    }
+  }
